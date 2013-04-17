@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
    <PATCH nodename="C:\Users\Vasilis\Documents\GitHub\BoxTrot\Touch Base\Applications\BoxTrot\BoxTrot.v4p" filename="C:\Users\Vasilis\Documents\GitHub\BoxTrot\Touch Base\Applications\Multitouch Application Template\BoxTrot.v4p" systemname="BoxTrot">
-   <BOUNDS height="9465" left="7965" top="5010" type="Window" width="9000">
+   <BOUNDS height="9465" left="12945" top="1935" type="Window" width="9000">
    </BOUNDS>
    <NODE componentmode="InABox" id="1" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="1320" top="810" type="Node" width="0">
@@ -161,11 +161,11 @@
    <LINK srcnodeid="6" srcpinname="Z" dstnodeid="10" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Logic" filename="Subpatches\Logic.v4p" componentmode="InAWindow" id="11" nodename="Subpatches\Logic.v4p">
-   <BOUNDS type="Node" left="5175" top="5205" width="100" height="100">
+   <BOUNDS type="Node" left="4050" top="3570" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5175" top="5205" width="4800" height="3600">
+   <BOUNDS type="Box" left="4050" top="3570" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="675" top="5400" width="9000" height="6000">
+   <BOUNDS type="Window" left="-165" top="5715" width="9000" height="6000">
    </BOUNDS>
    <PIN pinname="iXY" visible="1">
    </PIN>
@@ -173,15 +173,15 @@
    </PIN>
    </NODE>
    <NODE systemname="Graphics" filename="Subpatches\Graphics.v4p" componentmode="InAWindow" id="12" nodename="Subpatches\Graphics.v4p">
-   <BOUNDS type="Node" left="1170" top="3870" width="100" height="100">
+   <BOUNDS type="Node" left="2235" top="3900" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1170" top="3870" width="4800" height="3600">
+   <BOUNDS type="Box" left="2235" top="3900" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="8505" top="3210" width="9000" height="6000">
+   <BOUNDS type="Window" left="735" top="2895" width="8580" height="6000">
    </BOUNDS>
-   <PIN pinname="Layer" visible="1">
+   <PIN pinname="Layer" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="transform" visible="1">
+   <PIN pinname="transform" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="11" dstpinname="iXY">

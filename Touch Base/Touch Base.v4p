@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
    <PATCH nodename="C:\Users\Vasilis\Documents\GitHub\BoxTrot\Touch Base\Touch Base.v4p" bgcolor="13070080" filename="C:\Program Files\VVVV\VVVV Install Pack\Touch Base\Touch Base.v4p" systemname="Touch Base">
-   <BOUNDS height="11145" left="2520" top="255" type="Window" width="8715">
+   <BOUNDS height="11145" left="255" top="1485" type="Window" width="8715">
    </BOUNDS>
    <NODE componentmode="Hidden" id="2" nodename="AspectRatio (Transform)" systemname="AspectRatio (Transform)">
    <BOUNDS height="100" left="315" top="1095" type="Node" width="100">
@@ -39,7 +39,7 @@
    </BOUNDS>
    <BOUNDS height="3600" left="300" top="5100" type="Box" width="4800">
    </BOUNDS>
-   <BOUNDS height="12195" left="8355" top="915" type="Window" width="9015">
+   <BOUNDS height="12195" left="14190" top="3450" type="Window" width="9015">
    </BOUNDS>
    <PIN pinname="XYi" visible="1">
    </PIN>
@@ -53,7 +53,7 @@
    </BOUNDS>
    <BOUNDS height="1800" left="300" top="6855" type="Box" width="2400">
    </BOUNDS>
-   <BOUNDS height="6495" left="8730" top="0" type="Window" width="10800">
+   <BOUNDS height="6495" left="8070" top="1155" type="Window" width="10800">
    </BOUNDS>
    <PIN pinname="Layers" slicecount="1" visible="1" values="||">
    </PIN>
@@ -423,5 +423,33 @@
    <LINK dstnodeid="56" dstpinname="Background Color" srcnodeid="55" srcpinname="Background Color">
    </LINK>
    <LINK dstnodeid="56" dstpinname="Projection" srcnodeid="55" srcpinname="Transform Out">
+   </LINK>
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="57">
+   <BOUNDS type="Node" left="1350" top="7665" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="X" dstnodeid="57" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Y" dstnodeid="57" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Left Button" dstnodeid="57" dstpinname="Z">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="58">
+   <BOUNDS type="Node" left="1560" top="8100" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="mouseXYL">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="57" srcpinname="XYZ" dstnodeid="58" dstpinname="Input Value">
    </LINK>
    </PATCH>
