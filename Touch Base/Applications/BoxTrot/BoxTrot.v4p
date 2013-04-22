@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
    <PATCH nodename="C:\Users\Vasilis\Documents\GitHub\BoxTrot\Touch Base\Applications\BoxTrot\BoxTrot.v4p" filename="C:\Users\Vasilis\Documents\GitHub\BoxTrot\Touch Base\Applications\Multitouch Application Template\BoxTrot.v4p" systemname="BoxTrot">
-   <BOUNDS height="9465" left="9585" top="1440" type="Window" width="9000">
+   <BOUNDS height="9465" left="1275" top="1230" type="Window" width="9000">
    </BOUNDS>
    <NODE componentmode="InABox" id="1" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="1320" top="810" type="Node" width="0">
@@ -48,6 +48,8 @@
    <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
    </PIN>
    </NODE>
    <LINK dstnodeid="2" dstpinname="Input Node" srcnodeid="3" srcpinname="Layer">
@@ -160,12 +162,12 @@
    </NODE>
    <LINK srcnodeid="6" srcpinname="Z" dstnodeid="10" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="Logic" filename="Subpatches\Logic.v4p" componentmode="InAWindow" id="11" nodename="Subpatches\Logic.v4p">
+   <NODE systemname="Logic" filename="Subpatches\Logic.v4p" componentmode="Hidden" id="11" nodename="Subpatches\Logic.v4p">
    <BOUNDS type="Node" left="4050" top="3570" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="4050" top="3570" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="5865" top="0" width="9000" height="6000">
+   <BOUNDS type="Window" left="4410" top="1050" width="9000" height="6000">
    </BOUNDS>
    <PIN pinname="iXY" visible="1">
    </PIN>
@@ -177,13 +179,17 @@
    </PIN>
    <PIN pinname="Last Slice" visible="1">
    </PIN>
+   <PIN pinname="Transform buttons" visible="1">
+   </PIN>
+   <PIN pinname="Transform animation" visible="1">
+   </PIN>
    </NODE>
-   <NODE systemname="Graphics" filename="Subpatches\Graphics.v4p" componentmode="InAWindow" id="12" nodename="Subpatches\Graphics.v4p">
+   <NODE systemname="Graphics" filename="Subpatches\Graphics.v4p" componentmode="Hidden" id="12" nodename="Subpatches\Graphics.v4p">
    <BOUNDS type="Node" left="2235" top="3900" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="2235" top="3900" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="975" top="4035" width="8580" height="6000">
+   <BOUNDS type="Window" left="1155" top="3915" width="8580" height="6000">
    </BOUNDS>
    <PIN pinname="Layer" visible="1" slicecount="1" values="||">
    </PIN>
@@ -199,6 +205,8 @@
    <LINK srcnodeid="12" srcpinname="Layer" dstnodeid="3" dstpinname="Layer 1">
    </LINK>
    <LINK srcnodeid="11" srcpinname="transform" dstnodeid="12" dstpinname="transform">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Layer" dstnodeid="3" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="11" srcpinname="Layer" dstnodeid="12" dstpinname="Layer">
    </LINK>
