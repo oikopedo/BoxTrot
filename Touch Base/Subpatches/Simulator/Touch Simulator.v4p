@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
    <PATCH nodename="C:\Users\Vasilis\Documents\GitHub\BoxTrot\Touch Base\Subpatches\Simulator\Touch Simulator.v4p" locked="1">
-   <BOUNDS height="4620" left="11730" top="6495" type="Window" width="4065">
+   <BOUNDS height="4620" left="3930" top="3885" type="Window" width="4065">
    </BOUNDS>
    <NODE componentmode="InABox" id="22" nodename="IOBox (Value Advanced)" systemname="IOBOX (VALUE ADVANCED)">
    <BOUNDS height="0" left="105" top="765" type="Node" width="0">

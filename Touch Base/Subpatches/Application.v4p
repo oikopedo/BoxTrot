@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
    <PATCH nodename="C:\Users\Vasilis\Documents\GitHub\BoxTrot\Touch Base\Subpatches\Application.v4p" filename="C:\Program Files\VVVV\VVVV Install Pack\Touch Base\Subpatches\Application.v4p" systemname="Application">
-   <BOUNDS height="5070" left="6375" top="4215" type="Window" width="6360">
+   <BOUNDS height="6045" left="8880" top="4200" type="Window" width="6360">
    </BOUNDS>
    <NODE componentmode="InABox" id="0" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="990" top="1455" type="Node" width="0">
@@ -83,7 +83,7 @@
    <NODE systemname="BoxTrot" filename="..\Applications\BoxTrot\BoxTrot.v4p" nodename="..\Applications\BoxTrot\BoxTrot.v4p" componentmode="Hidden" id="12">
    <BOUNDS type="Node" left="1065" top="3090" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="1500" top="5310" width="6150" height="4665">
+   <BOUNDS type="Window" left="4185" top="3105" width="6150" height="4665">
    </BOUNDS>
    <PIN pinname="iXY" visible="1">
    </PIN>
