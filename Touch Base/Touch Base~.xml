@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
    <PATCH nodename="C:\Users\Vasilis\Documents\GitHub\BoxTrot\Touch Base\Touch Base.v4p" bgcolor="13070080" filename="C:\Program Files\VVVV\VVVV Install Pack\Touch Base\Touch Base.v4p" systemname="Touch Base">
-   <BOUNDS height="9825" left="1035" top="405" type="Window" width="8505">
+   <BOUNDS height="9825" left="1110" top="525" type="Window" width="8505">
    </BOUNDS>
    <NODE componentmode="Hidden" id="2" nodename="AspectRatio (Transform)" systemname="AspectRatio (Transform)">
    <BOUNDS height="100" left="315" top="1095" type="Node" width="100">
@@ -34,12 +34,12 @@
    <PIN pinname="layer" visible="1">
    </PIN>
    </NODE>
-   <NODE componentmode="InAWindow" filename="Subpatches\Application.v4p" id="11" nodename="Subpatches\Application.v4p" systemname="Application">
+   <NODE componentmode="Hidden" filename="Subpatches\Application.v4p" id="11" nodename="Subpatches\Application.v4p" systemname="Application">
    <BOUNDS height="270" left="300" top="5100" type="Node" width="3120">
    </BOUNDS>
    <BOUNDS height="3600" left="300" top="5100" type="Box" width="4800">
    </BOUNDS>
-   <BOUNDS height="7515" left="9285" top="4110" type="Window" width="8640">
+   <BOUNDS height="7515" left="10560" top="3885" type="Window" width="8640">
    </BOUNDS>
    <PIN pinname="XYi" visible="1">
    </PIN>
