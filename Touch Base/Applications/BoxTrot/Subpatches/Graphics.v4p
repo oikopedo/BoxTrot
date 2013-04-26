@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
    <PATCH nodename="C:\Users\Vasilis\Documents\GitHub\BoxTrot\Touch Base\Applications\BoxTrot\Subpatches\Graphics.v4p" systemname="Graphics" filename="C:\Users\Vasilis\Documents\GitHub\BoxTrot\Touch Base\Applications\BoxTrot\Subpatches\Graphics.v4p">
-   <BOUNDS type="Window" left="975" top="4035" width="8580" height="6000">
+   <BOUNDS type="Window" left="1215" top="2745" width="8580" height="6000">
    </BOUNDS>
    <NODE componentmode="Hidden" id="43" nodename="Quad (DX9)" systemname="Quad (DX9)">
-   <BOUNDS height="0" left="1875" top="4515" type="Node" width="0">
+   <BOUNDS height="0" left="1875" top="4125" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -19,7 +19,7 @@
    <NODE componentmode="Hidden" id="42" nodename="Group (EX9)" systemname="Group (EX9)">
    <BOUNDS height="270" left="1875" top="5085" type="Node" width="3255">
    </BOUNDS>
-   <PIN pinname="Layer 1" visible="1">
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -36,8 +36,6 @@
    <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK dstnodeid="42" dstpinname="Layer 1" srcnodeid="43" srcpinname="Layer">
-   </LINK>
    <NODE componentmode="Hidden" id="19" nodename="Quad (DX9)" systemname="Quad (DX9)">
    <BOUNDS height="100" left="3540" top="3690" type="Node" width="100">
    </BOUNDS>
@@ -53,9 +51,9 @@
    <LINK dstnodeid="42" dstpinname="Layer 3" srcnodeid="19" srcpinname="Layer">
    </LINK>
    <NODE componentmode="InABox" id="18" nodename="IOBox (Color)" systemname="IOBox (Color)">
-   <BOUNDS height="100" left="4560" top="3120" type="Node" width="100">
+   <BOUNDS height="100" left="5100" top="3075" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="480" left="4560" top="3120" type="Box" width="2250">
+   <BOUNDS height="480" left="5100" top="3075" type="Box" width="2250">
    </BOUNDS>
    <PIN pinname="Color Output" visible="1">
    </PIN>
@@ -244,8 +242,6 @@
    </NODE>
    <LINK srcnodeid="89" srcpinname="Output" dstnodeid="88" dstpinname="Text">
    </LINK>
-   <LINK srcnodeid="88" srcpinname="Layer" dstnodeid="42" dstpinname="Layer 4">
-   </LINK>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="90">
    <BOUNDS type="Node" left="3120" top="1335" width="100" height="100">
    </BOUNDS>
@@ -268,34 +264,10 @@
    </NODE>
    <LINK srcnodeid="90" srcpinname="Transform Out" dstnodeid="88" dstpinname="Transform">
    </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="91" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="1875" top="3765" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1875" top="3765" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
-   </PIN>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="91" srcpinname="Output Node" dstnodeid="43" dstpinname="Render State">
-   </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="92" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="3540" top="2475" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3540" top="2475" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
-   </PIN>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="92" srcpinname="Output Node" dstnodeid="19" dstpinname="Transform">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="93" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="4575" top="900" width="0" height="0">
+   <BOUNDS type="Node" left="4560" top="720" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4575" top="900" width="795" height="240">
+   <BOUNDS type="Box" left="4560" top="720" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -308,16 +280,44 @@
    </NODE>
    <LINK srcnodeid="93" srcpinname="Y Output Value" dstnodeid="89" dstpinname="Switch">
    </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="94" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="2640" top="4785" width="0" height="0">
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="95" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="3030" top="2700" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2640" top="4785" width="795" height="240">
+   <BOUNDS type="Box" left="3030" top="2700" width="705" height="240">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform animation|">
    </PIN>
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="94" srcpinname="Output Node" dstnodeid="42" dstpinname="Layer 2">
+   <LINK srcnodeid="95" srcpinname="Output Node" dstnodeid="19" dstpinname="Transform">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="96" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="1980" top="3480" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1980" top="3480" width="780" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform buttons|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="96" srcpinname="Output Node" dstnodeid="43" dstpinname="Transform">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="97" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="4290" top="4440" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4290" top="4440" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="numbers">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="43" srcpinname="Layer" dstnodeid="42" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="Output Node" dstnodeid="42" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="88" srcpinname="Layer" dstnodeid="42" dstpinname="Layer 2">
    </LINK>
    </PATCH>
