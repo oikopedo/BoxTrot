@@ -12,7 +12,7 @@
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    </NODE>
-   <NODE componentmode="Hidden" filename="Subpatches\Simulator\Touch Simulator.v4p" id="10" nodename="Subpatches\Simulator\Touch Simulator.v4p" systemname="Touch Simulator">
+   <NODE componentmode="InAWindow" filename="Subpatches\Simulator\Touch Simulator.v4p" id="10" nodename="Subpatches\Simulator\Touch Simulator.v4p" systemname="Touch Simulator">
    <BOUNDS height="270" left="915" top="3015" type="Node" width="1800">
    </BOUNDS>
    <PIN pinname="XYid" visible="1">
@@ -23,7 +23,7 @@
    </BOUNDS>
    <PIN pinname="AR" visible="1">
    </PIN>
-   <BOUNDS height="4620" left="9990" top="3540" type="Window" width="4065">
+   <BOUNDS height="4620" left="3930" top="3885" type="Window" width="4065">
    </BOUNDS>
    <PIN pinname="XY Renderer" visible="1">
    </PIN>
@@ -39,7 +39,7 @@
    </BOUNDS>
    <BOUNDS height="3600" left="300" top="5100" type="Box" width="4800">
    </BOUNDS>
-   <BOUNDS height="5070" left="6375" top="4215" type="Window" width="6360">
+   <BOUNDS height="6045" left="8880" top="4200" type="Window" width="6360">
    </BOUNDS>
    <PIN pinname="XYi" visible="1">
    </PIN>
@@ -53,7 +53,7 @@
    </BOUNDS>
    <BOUNDS height="1800" left="300" top="6855" type="Box" width="2400">
    </BOUNDS>
-   <BOUNDS height="4695" left="9885" top="1170" type="Window" width="5745">
+   <BOUNDS height="3750" left="10065" top="945" type="Window" width="8490">
    </BOUNDS>
    <PIN pinname="Layers" slicecount="1" visible="1" values="||">
    </PIN>

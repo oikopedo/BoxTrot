@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
    <PATCH nodename="C:\Users\Vasilis\Documents\GitHub\BoxTrot\Touch Base\Applications\BoxTrot\Subpatches\Logic.v4p" systemname="Logic" filename="C:\Users\Vasilis\Documents\GitHub\BoxTrot\Touch Base\Applications\BoxTrot\Subpatches\Logic.v4p">
-   <BOUNDS type="Window" left="9600" top="5595" width="9600" height="5805">
+   <BOUNDS type="Window" left="600" top="7125" width="9600" height="10500">
    </BOUNDS>
    <NODE systemname="HitTest (2d Quad)" filename="%VVVV%\addonpack\lib\nodes\plugins\HitTest2dNodes.dll" nodename="HitTest (2d Quad)" componentmode="Hidden" id="3">
    <BOUNDS type="Node" left="7125" top="5115" width="100" height="100">
@@ -29,11 +29,11 @@
    </PIN>
    <PIN pinname="ScaleY" slicecount="1" values="0.29">
    </PIN>
-   <PIN pinname="TranslateY" visible="1">
+   <PIN pinname="TranslateY" visible="1" slicecount="2" values="0,0">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="22" nodename="Vector (2d Split)" systemname="Vector (2d Split)">
-   <BOUNDS height="100" left="4275" top="5505" type="Node" width="100">
+   <BOUNDS height="100" left="4245" top="4980" type="Node" width="100">
    </BOUNDS>
    <PIN pinname="XY" visible="1">
    </PIN>
@@ -43,9 +43,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="21" nodename="Damper (Animation)" systemname="Damper (Animation)">
-   <BOUNDS height="100" left="4395" top="6615" type="Node" width="100">
+   <BOUNDS height="100" left="4290" top="6285" type="Node" width="100">
    </BOUNDS>
-   <PIN pinname="Go To Position" visible="1">
+   <PIN pinname="Go To Position" visible="1" slicecount="0" values="-0.4625,0.3075,0.4625,0.3075,-0.4625,-0.2875,0.4625,-0.2875">
    </PIN>
    <PIN pinname="Position Out" visible="1">
    </PIN>
@@ -55,9 +55,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="38" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="4260" top="8235" width="0" height="0">
+   <BOUNDS type="Node" left="4125" top="8025" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4260" top="8235" width="795" height="240">
+   <BOUNDS type="Box" left="4125" top="8025" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Transform animation|">
    </PIN>
@@ -191,7 +191,7 @@
    <LINK srcnodeid="48" srcpinname="Transform Out" dstnodeid="3" dstpinname="Transform In">
    </LINK>
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="63">
-   <BOUNDS type="Node" left="4545" top="3465" width="100" height="100">
+   <BOUNDS type="Node" left="4185" top="4005" width="100" height="100">
    </BOUNDS>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -203,22 +203,6 @@
    <LINK srcnodeid="45" srcpinname="X Out" dstnodeid="63" dstpinname="X">
    </LINK>
    <LINK srcnodeid="45" srcpinname="Y Out" dstnodeid="63" dstpinname="Y">
-   </LINK>
-   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="65">
-   <BOUNDS type="Node" left="4320" top="6090" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="X" visible="1">
-   </PIN>
-   <PIN pinname="Y" visible="1">
-   </PIN>
-   <PIN pinname="XY" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="22" srcpinname="X" dstnodeid="65" dstpinname="X">
-   </LINK>
-   <LINK srcnodeid="22" srcpinname="Y" dstnodeid="65" dstpinname="Y">
-   </LINK>
-   <LINK srcnodeid="21" srcpinname="Position Out" dstnodeid="26" dstpinname="TranslateX">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="67" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="8430" top="5490" width="0" height="0">
@@ -256,38 +240,42 @@
    </NODE>
    <LINK srcnodeid="3" srcpinname="Object Id" dstnodeid="71" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="65" srcpinname="XY" dstnodeid="21" dstpinname="Go To Position">
-   <LINKPOINT x="4410" y="6555">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="81">
-   <BOUNDS type="Node" left="5325" top="6615" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Go To Position" visible="1">
-   </PIN>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="65" srcpinname="XY" dstnodeid="81" dstpinname="Go To Position">
-   </LINK>
-   <LINK srcnodeid="81" srcpinname="Position Out" dstnodeid="26" dstpinname="TranslateY">
-   </LINK>
    <NODE id="23" componentmode="Hidden" nodename="GetSlice (Spreads)" systemname="GetSlice (Spreads)">
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="8" values="-0.4625,0.3075,0.4625,0.3075,-0.4625,-0.2875,0.4625,-0.2875">
    </PIN>
    <PIN pinname="Index" visible="1">
    </PIN>
    <PIN pinname="Bin Size" slicecount="1" values="1">
    </PIN>
-   <BOUNDS type="Node" height="100" left="4350" top="4890" width="100">
+   <BOUNDS type="Node" height="100" left="4290" top="4590" width="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
+   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="22" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Position Out" dstnodeid="26" dstpinname="TranslateY">
+   </LINK>
    <LINK srcnodeid="3" srcpinname="Object Id" dstnodeid="23" dstpinname="Index">
    </LINK>
-   <LINK srcnodeid="63" srcpinname="XY" dstnodeid="23" dstpinname="Input">
+   <LINK srcnodeid="21" srcpinname="Position Out" dstnodeid="26" dstpinname="TranslateX">
    </LINK>
-   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="22" dstpinname="XY">
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="88">
+   <BOUNDS type="Node" left="4320" top="5715" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="X" dstnodeid="88" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Y" dstnodeid="88" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="88" srcpinname="XY" dstnodeid="21" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="XY" dstnodeid="23" dstpinname="Input">
    </LINK>
    </PATCH>

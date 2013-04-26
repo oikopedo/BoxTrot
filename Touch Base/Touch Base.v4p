@@ -39,7 +39,7 @@
    </BOUNDS>
    <BOUNDS height="3600" left="300" top="5100" type="Box" width="4800">
    </BOUNDS>
-   <BOUNDS height="6045" left="8880" top="4200" type="Window" width="6360">
+   <BOUNDS height="6045" left="12375" top="4155" type="Window" width="6360">
    </BOUNDS>
    <PIN pinname="XYi" visible="1">
    </PIN>
