@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
    <PATCH nodename="C:\Users\Vasilis\Documents\GitHub\BoxTrot\Touch Base\Applications\BoxTrot\Subpatches\Graphics.v4p" systemname="Graphics" filename="C:\Users\Vasilis\Documents\GitHub\BoxTrot\Touch Base\Applications\BoxTrot\Subpatches\Graphics.v4p">
-   <BOUNDS type="Window" left="1545" top="6045" width="4515" height="3015">
+   <BOUNDS type="Window" left="9045" top="4560" width="8490" height="7905">
    </BOUNDS>
    <NODE componentmode="Hidden" id="43" nodename="Quad (DX9)" systemname="Quad (DX9)">
    <BOUNDS height="0" left="1170" top="1155" type="Node" width="0">
@@ -11,9 +11,11 @@
    </PIN>
    <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
    </PIN>
-   <PIN pinname="Color" visible="1" slicecount="2" values="|1.00000,1.00000,1.00000,1.00000|,|0.41938,0.69640,0.83946,1.00000|">
+   <PIN pinname="Color" visible="1" slicecount="2" values="|1.00000,1.00000,1.00000,1.00000|,|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="42" nodename="Group (EX9)" systemname="Group (EX9)">
@@ -51,9 +53,9 @@
    <LINK dstnodeid="42" dstpinname="Layer 3" srcnodeid="19" srcpinname="Layer">
    </LINK>
    <NODE componentmode="InABox" id="18" nodename="IOBox (Color)" systemname="IOBox (Color)">
-   <BOUNDS height="100" left="5100" top="3075" type="Node" width="100">
+   <BOUNDS height="100" left="4935" top="2910" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="480" left="5100" top="3075" type="Box" width="2250">
+   <BOUNDS height="480" left="4935" top="2910" type="Box" width="2250">
    </BOUNDS>
    <PIN pinname="Color Output" visible="1">
    </PIN>
@@ -73,11 +75,11 @@
    </PIN>
    </NODE>
    <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="71">
-   <BOUNDS type="Node" left="3840" top="3075" width="100" height="100">
+   <BOUNDS type="Node" left="3825" top="3165" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" values="..\Media\albert_einstein_professor.png">
+   <PIN pinname="Filename" slicecount="1" values="|..\Media\albert_einstein_professor copy.png|">
    </PIN>
    </NODE>
    <LINK srcnodeid="71" srcpinname="Texture Out" dstnodeid="19" dstpinname="Texture">
@@ -97,9 +99,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="95" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="3240" top="2700" width="0" height="0">
+   <BOUNDS type="Node" left="3660" top="2625" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3240" top="2700" width="705" height="240">
+   <BOUNDS type="Box" left="3660" top="2625" width="705" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Transform animation|">
    </PIN>
@@ -153,5 +155,27 @@
    <LINK srcnodeid="99" srcpinname="Output" dstnodeid="88" dstpinname="Text">
    </LINK>
    <LINK srcnodeid="96" srcpinname="Output Node" dstnodeid="88" dstpinname="Transform">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="101" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="4260" top="4455" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4260" top="4455" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Text">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="101" srcpinname="Output Node" dstnodeid="42" dstpinname="Layer 4">
+   </LINK>
+   <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="102">
+   <BOUNDS type="Node" left="1515" top="210" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Filename" slicecount="1" values="..\..\..\..\..\..\..\Desktop\1194984754884631372button-blue_benji_park_01.svg.hi.png">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="102" srcpinname="Texture Out" dstnodeid="43" dstpinname="Texture">
    </LINK>
    </PATCH>
